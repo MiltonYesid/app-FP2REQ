@@ -1,0 +1,72 @@
+
+table, td{
+   font:100% Arial;
+}
+#tablero{
+width:100%;
+border-collapse:collapse;
+margin:1em 0;
+}
+th, td{
+text-align:left;padding:.5em; ;
+}
+th{background:#696969;color:#fff;}
+#visorDiagramador
+{
+    margin:0px 0px 0px 700px;
+}
+#questionario
+{
+    margin:-600px 0px 0px 100px;
+}
+
+
+#td.selected{background:#696969;color:#555;}
+#td:hover
+{
+background:#696969;
+}
+#boton:hover
+{
+background:#000080;
+color:#FFFFFF;
+}
+#tabla
+{
+background-color :#C0DCC0;
+}
+
+
+   /*los div en los cuales voy a distribuir el contenido*/
+   #contenido
+   {
+      margin:40px 5px 5px 130px;
+      width : 500px;
+      font:100% Arial;
+      height:auto;
+   }
+   #contSQ
+   {
+      margin:10px 5px 15px 130px;
+      width : 800px;
+      font:100% Arial;
+      height:auto;
+   }
+   #Taxonomies
+   {
+      margin:-150px 80px 80px 600px;
+      width : 500px;
+      font:100% Arial;
+      height:auto;
+   }
+ 
+
+ #nombreProjecto
+ {
+    color:#FFFFFF;
+    font:200% Arial;
+ }
+ 
+
+
+

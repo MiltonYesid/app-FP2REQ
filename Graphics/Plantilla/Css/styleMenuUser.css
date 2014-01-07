@@ -1,0 +1,85 @@
+#menuHorizontal
+   {
+       height:auto;
+       float:left;
+       padding:1px;
+      width : auto;
+      font-family : "Tahoma", serif;
+       margin:0 0px 0px 0;
+       float:left;
+       padding:5px;
+       border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+   }
+
+   /* menu creado */
+   ul,li,a{
+      padding : 0px;
+      margin : 0px;
+   }
+   #header2
+   {
+      border:0px;
+       margin: -20px -300px 0px 0px;
+      float: right;
+      font-family : "Tahoma", serif;
+      font:120% Arial;
+     background:url(../images/pic01_01.jp) ;
+     
+   }
+   
+
+
+   
+   ul, ol, td
+   {
+      list-style : none;
+   }
+   .nav2
+   {
+        height:10px; 
+ background:url(../images/pic01_01.jp) ;
+
+   }
+   .nav2 li a
+   {
+       
+  background:url(../images/pic01_01.jp) ;
+      color : #fff;
+      text-decoration : none;
+      padding : 5px 5px;
+      display : block;
+   
+
+   }
+   .nav2 li a:hover
+   {
+     background:#fff;
+      color:#000;
+      border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+   }
+   .nav2 > li
+   {
+      float:center;
+   }
+   .nav2 li ul
+   {
+      display :none;
+      position : absolute;
+   }
+   .nav2 li:hover > ul
+   {
+      display:block;
+   }
+   .nav2 li ul li
+   {
+      position:relative;
+   }
+   .nav2 li ul li ul
+   {
+      right :-100px;
+      top:0px;
+      position:absolute;
+      float:right;
+   }

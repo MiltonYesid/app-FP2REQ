@@ -1,0 +1,140 @@
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+#nav
+{
+    position: fixed;
+    display: block;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+
+
+		    
+	
+}
+
+#nav > ul > li > ul
+{
+    display: none;
+}
+
+#nav > ul
+{
+    display: inline-block;
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+    padding: 0 1.5em 0 1.5em;
+}
+
+#nav > ul > li
+{
+    display: inline-block;
+    text-align: center;
+    padding: 0 1.5em 0 1.5em;
+}
+
+#nav > ul > li > a,
+#nav > ul > li > span
+{
+    display: block;
+    color: #eee;
+    color: rgba(255,255,255,0.75);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    height: 5em;
+    line-height: 5em;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    outline: 0;
+}
+
+#nav > ul > li:hover > a,
+#nav > ul > li.active > a,
+#nav > ul > li.active > span
+{
+    color: #fff;
+}
+
+
+
+ul,li,a{
+    padding : 0px;
+    margin : 0px;
+}
+#header1
+{
+    margin: -20px 50px 0px 0px;
+    float: right;
+    width : 800px;
+    font-family : "Tahoma", serif;
+    font:110% Arial;
+    top: 2.5em;
+      position: fixed;
+}
+ul, ol, td
+{
+    list-style : none;
+    
+}
+.nav1
+{
+    width: 400px;
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+}
+.nav1 li a
+{
+    background:#384048;
+    color : #FFFFFF;
+    text-decoration : none;
+    padding : 10px 15px;
+    display : block;
+    width: 100px;
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+}
+.nav1 li :hover
+{
+    background:#fff ;
+    color:#000;
+}
+
+
+.nav1 > li
+{
+    float:center;
+}
+.nav1 li ul
+{
+    display :none;
+    position : absolute;
+    min-width:100px;
+    max-width:101px;
+}
+.nav1 li:hover > ul
+{
+    display:block;
+}
+.nav1 li ul li
+{
+    position:relative;
+}
+.nav1 li ul li ul
+{
+    right :0px;
+    top:0px;
+    position:absolute;
+    float:rigth;
+}
+
+
+
