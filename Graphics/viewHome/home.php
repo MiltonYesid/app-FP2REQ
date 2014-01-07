@@ -8,7 +8,7 @@ include_once 'functionsPresentation.php';
         {
             include_once 'encabezado.php';
         }
-//holakkkk
+//cambios a realizar
 
 ?>
 <body class="homepage">
