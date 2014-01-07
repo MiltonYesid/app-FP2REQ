@@ -8,7 +8,7 @@ include_once 'functionsPresentation.php';
         {
             include_once 'encabezado.php';
         }
-//cambios a realizarccccccccccccccccccccccccc
+//cambios a realizarccgggggggggggggggggccccccccccccccccccccccc
 
 ?>
 <body class="homepage">
