@@ -75,9 +75,8 @@ include_once 'functionsPresentation.php';
                             Aliquam diam ante, aliquet sit amet vulputate lorem at placerat at nisl. 
                             Maecenas et gravida ligula sed lacus euismod tincidunt nullam eget justo orci.</p>
                             -->
-<?php
-//algunas depuraciones
-?>
+
+
                         </section>
                         <!-- /Intro -->
 
@@ -89,3 +88,4 @@ include_once 'functionsPresentation.php';
         <?php
         include_once 'piePagina.php'
         ?>
+    ?>
