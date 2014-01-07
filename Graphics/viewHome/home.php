@@ -4,9 +4,12 @@ require ('../xajax/xajax.inc.php');
 $xajax = new xajax;
 include_once 'functionsPresentation.php';
 
-if ($xajax != null) {
-    include_once 'encabezado.php';
-}
+        if($xajax != null)
+        {
+            include_once 'encabezado.php';
+        }
+
+
 ?>
 <body class="homepage">
     <!-- Header Wrapper -->
@@ -22,22 +25,25 @@ if ($xajax != null) {
                         <div id="logo">
                             <h1><a href="#">FP2REQ</a></h1>
                             <span class="byline">From Processes to Requirements</span><br><br><br>
-
+                            <div id ="nuevo">
+                                <TABLE>
+                                    <tr>
+                                        <td>
+                                            E-mail:    <input id="email" type="text" value="">
+                                            Password:   <input id="password" type="password" value="">
+                                            <a href="#ok" class="button button-style1" onClick="xajax_login(email.value,password.value)">login</a></li>
+                                        </td>
+                                    </tr>
+                                </TABLE>
+                            </div>
                             <div id="AnswerAnalyst"></div>
-                        </div><br><br><br><br><br><br><br><br><br><br><br>
-                        <div id ="log23" class="log23" >
-                            <center>
-                            <input id="email" type="text" value="" placeholder="E-mail"><br><br>
-                            <input id="password" type="password" value="" placeholder="Password"><br><br>
-                            <a href="#ok" class="button button-style1" onClick="xajax_login(email.value,password.value)">login</a></li>
                         </div>
-
-
                         <!-- /Logo -->
                         <!-- Nav --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<?php
-include_once'barraMenu.php';
-?>
+                        <?php
+                        include_once'barraMenu.php';
+                        
+                        ?>
                         <!-- Nav -->
                         <nav id="nav">
 
@@ -69,8 +75,9 @@ include_once'barraMenu.php';
                             Aliquam diam ante, aliquet sit amet vulputate lorem at placerat at nisl. 
                             Maecenas et gravida ligula sed lacus euismod tincidunt nullam eget justo orci.</p>
                             -->
-
-
+<?php
+//algunas depuraciones
+?>
                         </section>
                         <!-- /Intro -->
 
@@ -79,6 +86,6 @@ include_once'barraMenu.php';
             </div>
         </div>
         <!-- /Intro Wrapper -->
-<?php
-include_once 'piePagina.php'
-?>
+        <?php
+        include_once 'piePagina.php'
+        ?>
