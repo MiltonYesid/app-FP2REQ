@@ -4,12 +4,18 @@ require ('../xajax/xajax.inc.php');
 $xajax = new xajax;
 include_once 'functionsPresentation.php';
 
+<<<<<<< HEAD
         if($xajax != null)
         {
             include_once 'encabezado.php';
         }
 //cambios a realizarccgggggggggggggggggccccccccccccccccccccccc
 
+=======
+if ($xajax != null) {
+    include_once 'encabezado.php';
+}
+>>>>>>> 796f20d0f9ddd51b88a6f5400214b8552ea1e89d
 ?>
 <body class="homepage">
     <!-- Header Wrapper -->
@@ -25,6 +31,7 @@ include_once 'functionsPresentation.php';
                         <div id="logo">
                             <h1><a href="#">FP2REQ</a></h1>
                             <span class="byline">From Processes to Requirements</span><br><br><br>
+<<<<<<< HEAD
                             <div id ="nuevo">
                                 <TABLE>
                                     <tr>
@@ -44,6 +51,24 @@ include_once 'functionsPresentation.php';
                         include_once'barraMenu.php';
                         
                         ?>
+=======
+
+                            <div id="AnswerAnalyst"></div>
+                        </div><br><br><br><br><br><br><br><br><br><br><br>
+                        <div id ="log23" class="log23" >
+                            <center>
+                            <input id="email" type="text" value="" placeholder="E-mail"><br><br>
+                            <input id="password" type="password" value="" placeholder="Password"><br><br>
+                            <a href="#ok" class="button button-style1" onClick="xajax_login(email.value,password.value)">login</a></li>
+                        </div>
+
+
+                        <!-- /Logo -->
+                        <!-- Nav --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<?php
+include_once'barraMenu.php';
+?>
+>>>>>>> 796f20d0f9ddd51b88a6f5400214b8552ea1e89d
                         <!-- Nav -->
                         <nav id="nav">
 
@@ -85,7 +110,13 @@ include_once 'functionsPresentation.php';
             </div>
         </div>
         <!-- /Intro Wrapper -->
+<<<<<<< HEAD
         <?php
         include_once 'piePagina.php'
         ?>
     ?>
+=======
+<?php
+include_once 'piePagina.php'
+?>
+>>>>>>> 796f20d0f9ddd51b88a6f5400214b8552ea1e89d
