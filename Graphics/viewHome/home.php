@@ -9,7 +9,7 @@ include_once 'functionsPresentation.php';
             include_once 'encabezado.php';
         }
 
-//algunsos cambios en la presentació
+//algunsos cambios en la presentaciósssssssssss
 ?>
 <body class="homepage">
     <!-- Header Wrapper -->
