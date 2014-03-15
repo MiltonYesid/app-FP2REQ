@@ -1,7 +1,7 @@
 <?php
 $typeMenu = $_SESSION["typeMenu"];
 switch ($typeMenu) {
-    
+
     case 0:
         ?>
         <!-- Main -->
@@ -12,7 +12,7 @@ switch ($typeMenu) {
                     <br>
                     <header>
                         <?php
-                        include_once 'Count/count.php';  
+                        include_once 'Count/count.php';
                         ?>
                     </header>
                 </div>
@@ -22,69 +22,40 @@ switch ($typeMenu) {
                 <div class="container">
 
                     <header>
-                        
-                    </header>
-            </section>
-            <?
-            break;
-        
-    case 1:
-        ?>
-        <!-- Main -->
-        <div id="main">
-            <!-- Intro -->
-            <section id="top" class="one">
-                <div class="container">
-                    <br>
-                    <header>
-                        <?php
-                        echo getTextListProjects()
-                        ?>
-                    </header>
-                </div>
-            </section>
-            <!-- Portfolio -->
-            <section id="portfolio" class="two">
-                <div class="container">
 
-                    <header>
-                        <?php
-                        
-                        echo getFormNewProjects(false);
-                        ?>
                     </header>
             </section>
-            <?
+            <?php
             break;
-        case 2:
+
+        case 1:
             ?>
             <!-- Main -->
             <div id="main">
                 <!-- Intro -->
                 <section id="top" class="one">
-                    <div class="container" id="list">
+                    <div class="container">
                         <br>
                         <header>
                             <?php
-                            echo getFormSelectASM();
+                            echo getTextListProjects()
                             ?>
                         </header>
                     </div>
                 </section>
                 <!-- Portfolio -->
                 <section id="portfolio" class="two">
-                    <div class="container" id="">
+                    <div class="container">
 
                         <header>
                             <?php
-                            echo getFormNewASM();
+                            echo getFormNewProjects(false);
                             ?>
-
                         </header>
                 </section>
-                <?
+                <?php
                 break;
-            case 3:
+            case 2:
                 ?>
                 <!-- Main -->
                 <div id="main">
@@ -94,7 +65,7 @@ switch ($typeMenu) {
                             <br>
                             <header>
                                 <?php
-                                echo getSelectTaxonomy();
+                                echo getFormSelectASM();
                                 ?>
                             </header>
                         </div>
@@ -105,14 +76,14 @@ switch ($typeMenu) {
 
                             <header>
                                 <?php
-                                include_once '../Taxonomies/FormCTaxonomia.html';
+                                echo getFormNewASM();
                                 ?>
 
                             </header>
                     </section>
-                    <?
+                    <?php
                     break;
-                case 4:
+                case 3:
                     ?>
                     <!-- Main -->
                     <div id="main">
@@ -122,16 +93,25 @@ switch ($typeMenu) {
                                 <br>
                                 <header>
                                     <?php
-                                    echo getFormUIquestionStructure();
+                                    echo getSelectTaxonomy();
                                     ?>
                                 </header>
                             </div>
                         </section>
                         <!-- Portfolio -->
+                        <section id="portfolio" class="two">
+                            <div class="container" id="">
 
+                                <header>
+                                    <?php
+                                    include_once '../Taxonomies/FormCTaxonomia.html';
+                                    ?>
+
+                                </header>
+                        </section>
                         <?
                         break;
-                    case 5:
+                    case 4:
                         ?>
                         <!-- Main -->
                         <div id="main">
@@ -141,66 +121,84 @@ switch ($typeMenu) {
                                     <br>
                                     <header>
                                         <?php
-                                        echo getFormInstantiateQuestions();
+                                        echo getFormUIquestionStructure();
                                         ?>
                                     </header>
                                 </div>
                             </section>
-                            <section id="portfolio" class="two">
-                                <div class="container" id="">
-
-                                    <header>
-                                        <table>
-                                            <tr>
-                                                <td>
-                                                    <div id=Structure> </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div id="SetOfQuestion" ></div>
-                                                    <center><div id="SetOfQuestion2" ></div> </center>
-                                                </td>
-                                            </tr>
-                                        </table> 
-
-
-                                    </header>
-                            </section>
-                           
                             <!-- Portfolio -->
 
-                            <?
+                            <?php
                             break;
-                        case 6:
-                ?>
-                <!-- Main -->
-                <div id="main">
-                    <!-- Intro -->
-                    <section id="top" class="one">
-                        <div class="container" id="list">
-                            <br>
-                            <header>
+                        case 5:
+                            ?>
+                            <!-- Main -->
+                            <div id="main">
+                                <!-- Intro -->
+                                <section id="top" class="one">
+                                    <div class="container" id="list">
+                                        <br>
+                                        <header>
+                                            <?php
+                                            echo getFormInstantiateQuestions();
+                                            ?>
+                                        </header>
+                                    </div>
+                                </section>
+                                <section id="portfolio" class="two">
+                                    <div class="container" id="">
+
+                                        <header>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div id=Structure> </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div id="SetOfQuestion" ></div>
+                                                <center><div id="SetOfQuestion2" ></div> </center>
+                                                </td>
+                                                </tr>
+                                            </table> 
+
+
+                                        </header>
+                                </section>
+
+                                <!-- Portfolio -->
+
                                 <?php
-                                getFormSETQuestions();
+                                break;
+                            case 6:
                                 ?>
-                            </header>
+                                <!-- Main -->
+                                <div id="main">
+                                    <!-- Intro -->
+                                    <section id="top" class="one">
+                                        <div class="container" id="list">
+                                            <br>
+                                            <header>
+                                                <?php
+                                                getFormSETQuestions();
+                                                ?>
+                                            </header>
+                                        </div>
+                                    </section>
+                                    <!-- Portfolio -->
+                                    <section id="portfolio" class="two">
+                                        <div class="container" id="">
+
+                                            <header>
+                                                <?php
+                                                ?>
+
+                                            </header>
+                                    </section>
+        <?php
+        break;
+}
+?>
                         </div>
-                    </section>
-                    <!-- Portfolio -->
-                    <section id="portfolio" class="two">
-                        <div class="container" id="">
-
-                            <header>
-                                <?php
-                                
-                                ?>
-
-                            </header>
-                    </section>
-                    <?
-                    break;
-                    }
-                    ?>
-                    </div>
 

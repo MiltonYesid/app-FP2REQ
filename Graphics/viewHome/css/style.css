@@ -353,13 +353,14 @@
 
 		.button-style1
 		{
-			background: #CCCCCC url('images/overlay.png');
+			background: #97C0C1 url('images/overlay.png');
 			color: #fff;
 		}
 
 			.button-style1:hover
 			{
-				background-color: #8F8F8F;
+				background-color: #fff;
+                                color: #000;
 			}
 			
 			.button-style1:active
@@ -407,7 +408,19 @@
 	ul.style2
 	{
 	}
-	
+	#nuevo
+        {border-radius: 0.35em;
+            margin: 4.5em 0 0 0;
+            background: #97C0C1;
+            width: 45%;
+            height: auto;
+            top:-50px;
+            margin: 10px -10px 20px 500px;
+        }
+        #AnswerAnalyst
+        {
+            margin: 10px 0px 0px 800px;
+        }
 		ul.style2 li
 		{
 			border-top: solid 1px #eee;
@@ -846,7 +859,7 @@
 			bottom: -38px;
 			left: -35px;
 			width: 35px;
-			height: 38px;
+			height: 10px;
 			background: url('images/shadow.png');
 		}
 		
@@ -857,7 +870,7 @@
 			bottom: -38px;
 			right: -35px;
 			width: 35px;
-			height: 38px;
+			height: 10px;
 			background: url('images/shadow.png');
 			-moz-transform: scaleX(-1);
 			-webkit-transform: scaleX(-1);
@@ -986,15 +999,14 @@
 	
 	.wrapper-style1
 	{
-		background: #D1D1D1;
-	
+		background: #97C0C1;
 		color: #fff;
+                margin: -50px 0px 0px 0px;
 	}
 	
 		.wrapper-style1 .title
 		{
-			background: #D1D1D1 url('images/overlay.png');
-			color: #666666;
+			background: #D1D1D1 url('images/overlay.png');	
 		}
 	
 		.wrapper-style1 h1,
@@ -1023,7 +1035,7 @@
 	
 	.wrapper-style3
 	{
-		background: #f3f3f3 url('images/overlay.png');
+		background: #D6EBAD url('images/overlay.png');
 	}
 	
 		.wrapper-style3 .title
@@ -1073,10 +1085,11 @@
 		
 		#intro .style2
 		{
-			font-weight: 700;
+			font-weight: 234px;
 			color: #fff;
-			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+			border-radius: 1em;
+			/*box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);*/
+                        
 		}
 		
 			#intro .style2 a
@@ -1085,9 +1098,7 @@
 				text-decoration: none;
 			}
 		
-		#intro .style3
-		{
-		}
+		
 		
 /*********************************************************************************/
 /* Highlights                                                                    */

@@ -123,14 +123,7 @@ function newAnalyst($nombre, $apellido, $org, $posicion, $email, $contrasena) {
                                 $mensaje .= "Your registration has been successful.We sent to your e-mail the information provided on this site";
                                 $respuesta->addAlert($mensaje);
                                 $mensaje .= "";
-
-
-
-
-
                                 $password = $contrasena;
-
-
                                 $Analyst = $AnalystsController->getAnalyst($email, $password);
                                 if ($Analyst != null) {
                                     $nombre = $Analyst->getFirstName();

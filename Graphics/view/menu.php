@@ -1,12 +1,10 @@
-<!DOCTYPE html> 
+
 <html>
     <head>
         <meta charset="utf-8">
-
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <style type="text/css">
             * {
                 margin: 0;
@@ -22,7 +20,7 @@
             #nav1 {
                 background-color: #1C2022;
                 height: auto;
-                 position: fixed;
+                position: fixed;
                 top: 0;
                 left: 0;
                 width: 50%;
@@ -180,80 +178,62 @@
             #container
             {
                 position: fixed;
-                 right :10000px;
-                  color:#333;
+                right :10000px;
+                color:#333;
             }
         </style>
-
-        <title></title>
-
-        <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
     </head>
     <body>
-
-
         <div class="container">
-
-
-
-
-
             <nav id="nav1">
                 <ul>
                     <li ><span><a href="#project-name" onClick="xajax_lookProject()"><div id="menu"><? echo getProjectCurrent(); ?></div></a></span></li>
                 </ul>
-                
+
                 <ul>
-                    
+
                     <li class="current_page_item">
-                        <span><a href ="#project-url" onClick="xajax_nextPage(1)"> Project</a></span>
+                        <span><a href ="#project-url" onClick="xajax_nextPage(1)">Project</a></span>
                     </li >
-                    
+
                     <?php
-                    if(getProjectCurrent()!="NONE PROJECT")
-                    {?>
-                    <li class="current_page_item">
-                        <span><a href ="#asm-url" onClick="xajax_nextPage(2)"> ASM</a></span>
-                    </li>
-                    <?}?>
-                    
-                        
+                    if (getProjectCurrent() != "NONE PROJECT") {
+                    ?>
+                        <li class="current_page_item">
+                            <span><a href ="#asm-url" onClick="xajax_nextPage(2)">ASM</a></span>
+                        </li>
+                    <?php } ?>
+
+
                     <li class="current_page_item">
                         <span><a href ="#asm-url" onClick="xajax_nextPage(3)"> Taxonomy</a></span>
                     </li>
-                        
-                        <?php
-                    if(getProjectCurrent()!="NONE PROJECT")
-                    {?>
-                    <li >
-                        <span><a href ="#asm-url" onClick="xajax_nextPage(4)">Structure Q.</a></span>
-                    </li>
-                    <?}?>
-                            <?php
-                    if(getProjectCurrent()!="NONE PROJECT")
-                    {?>
-                    <li >
-                        <span><a href ="#asm-url" onClick="xajax_nextPage(5)">Instantiate Q.</a></span>
-                    </li>
-                    <?}?>
+
                     <?php
-                    if(getProjectCurrent()!="NONE PROJECT")
-                    {?>
-                            <li >
-                        <span><a href ="#asm-url" onClick="xajax_nextPage(6)">Questions</a></span>
-                    </li>
-<?}?>
-                    
+                    if (getProjectCurrent() != "NONE PROJECT") {
+                        ?>
+                        <li >
+                            <span><a href ="#asm-url" onClick="xajax_nextPage(4)">Structure Q.</a></span>
+                        </li>
+                    <?php } ?>
+                    <?php
+                    if (getProjectCurrent() != "NONE PROJECT") {
+                        ?>
+                        <li >
+                            <span><a href ="#asm-url" onClick="xajax_nextPage(5)">Instantiate Q.</a></span>
+                        </li>
+                    <?php } ?>
+                    <?php
+                    if (getProjectCurrent() != "NONE PROJECT") {
+                        ?>
+                        <li >
+                            <span><a href ="#asm-url" onClick="xajax_nextPage(6)">Questions</a></span>
+                        </li>
+                    <?php }
+                    ?>
+
                 </ul>
             </nav>
         </div>
-
-
-
-
-
     </body>
 </html>

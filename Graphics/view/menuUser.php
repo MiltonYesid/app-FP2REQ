@@ -8,7 +8,7 @@ switch ($typeMenu) {
             <li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="">profile</span></a></li>
 
         </ul>
-        <?
+        <?php
         break;
     
     
@@ -22,7 +22,7 @@ switch ($typeMenu) {
             <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="">Group Projects</span></a></li>
             <li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="">Eliminated</span></a></li>
         </ul>
-        <?
+        <?php
         break;
     case 2:
         ?>
@@ -32,7 +32,7 @@ switch ($typeMenu) {
             <li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="">New</span></a></li>
             <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="">Eliminated</span></a></li>
         </ul>
-        <?
+        <?php
         break;
     case 3:
         ?>
@@ -52,7 +52,7 @@ switch ($typeMenu) {
             <li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="">Prototype </span></a></li>
             <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="">Eliminated</span></a></li>
         </ul>
-        <?
+        <?php
         break;
      case 5:
         ?>
@@ -62,7 +62,7 @@ switch ($typeMenu) {
             <li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="">New</span></a></li>
             <li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="">Eliminated</span></a></li>
         </ul>
-        <?
+        <?php
         break;
 }
 

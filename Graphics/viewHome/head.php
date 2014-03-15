@@ -1,6 +1,6 @@
-<div id="header-wrapper" class="wrapper">
-    <div class="container">
-        <div class="row">
+<div id="header-wrapper" >
+   
+
             <div class="12u">
 
                 <!-- Header -->
@@ -18,6 +18,6 @@
                 <!-- /Header -->
 
             </div>
-        </div>
-    </div>
+
+ 
 </div>

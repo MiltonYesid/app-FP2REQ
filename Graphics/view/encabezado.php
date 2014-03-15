@@ -114,7 +114,7 @@ $ref            = $_SESSION["ref"];
             </div>
 
 
-            <?
+            <?php
             echo "</div>";
         }
-        ?>
+        

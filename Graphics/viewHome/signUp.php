@@ -11,7 +11,7 @@ include_once 'functionsPresentation.php';
 
 
 ?>
-<body class="left-sidebar">
+<body class="">
     <?php
     include_once'head.php';
     ?>
